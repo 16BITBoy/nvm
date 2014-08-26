@@ -1,6 +1,6 @@
 #!/bin/sh
 
-die () { echo "$@" ; exit 1; }
+die () { echo "$@" ; cat "/home/travis/build/creationix/nvm/test/slow/nvm copy-packages/npm-debug.log"; exit 1; }
 
 . ../../../nvm.sh
 
